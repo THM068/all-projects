@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Rocket" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/aws-s3-demo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/blog-demo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ccwc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/files" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/grrs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/idea" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/json_serdes_api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/learn-rust" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ownership" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/replay-create-profile" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rust-basics" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/s3-viewer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sea-orm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/serdes" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tokio-my-redis" vcs="Git" />
+  </component>
+</project>

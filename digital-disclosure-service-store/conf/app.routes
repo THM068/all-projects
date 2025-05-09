@@ -1,0 +1,6 @@
+# microservice specific routes
+
+GET         /submission/user/:userId/id/:submissionId               controllers.SubmissionStoreController.get(userId, submissionId)
+GET         /submission/user/:userId                                controllers.SubmissionStoreController.getAll(userId)
+PUT         /submission                                             controllers.SubmissionStoreController.set()
+DELETE      /submission/user/:userId/id/:submissionId               controllers.SubmissionStoreController.delete(userId, submissionId)

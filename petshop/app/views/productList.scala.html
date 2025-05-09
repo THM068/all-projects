@@ -1,0 +1,28 @@
+@(products: List[Product])
+@main(title = "Product List") {
+    <div class="container">
+        <table class="table table-striped">
+            <tr>
+                <th>productId</th>
+                <th>productType</th>
+                <th>colour</th>
+                <th>availability</th>
+                <th>size</th>
+            </tr>
+            <tbody>
+            @for(product <- products) {
+                <tr>
+                    <td>@product.productId</td>
+                    <td>@product.productType</td>
+                    <td>@product.colour</td>
+                    <td>@product.availability</td>
+                    <td>@product.size</td>
+                </tr>
+            }
+            </tbody>
+
+        </table>
+    </div>
+
+
+}

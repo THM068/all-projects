@@ -1,0 +1,15 @@
+@(todoList: Seq[String])(implicit flash: Flash)
+
+@todoLists(list: List[String]) = {
+  @for(name <- list) {
+    <li>@name</li>
+  }
+}
+
+@for(todo <- todoList) {
+    <li>@todo</li>
+}
+<hr/>
+    @todoLists(list = List("Ashley","Miller", "Jamaica"))
+<li>Alexandra Thomas</li>
+<li style="color: blue">@flash.get("color")</li>

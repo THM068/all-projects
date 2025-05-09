@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/advent_of_code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/confexplorer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/confexplorer1.1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cordapp-template-kotlin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/finagle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/grpc-java-course" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/id-cybertron-api-tests" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/intro-coroutines" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kigali-city" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kotlin-ktor-realworld-example-app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/learn-java" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/micronaut-kotlin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/smiley-journal" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web-app-react-kotlin-js" vcs="Git" />
+  </component>
+</project>

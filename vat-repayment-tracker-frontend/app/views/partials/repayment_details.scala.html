@@ -1,0 +1,50 @@
+@*
+ * Copyright 2023 HM Revenue & Customs
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *@
+
+@import config.ViewConfig
+@import model.des._
+@import model._
+
+@this(viewConfig: ViewConfig)
+
+@(
+  showBankDetails: Boolean,
+  bankDetailsOption: Option[BankDetails],
+  address: Option[String],
+  addressExists: Boolean,
+  inflightBankDetails : Boolean
+)(implicit message: Messages)
+
+
+@if(showBankDetails) {
+ @bankDetailsOption.map{bankDetails =>
+ <h2 class="govuk-heading-l">@Messages("repayment_details.repayment_bank_details")</h2>
+ <p class="govuk-body"  >@Messages("repayment_details.currently_paid_bank_transfer")</p>
+ <p id="acc-name" class="govuk-body govuk-!-margin-bottom-1">@Messages("repayment_details.name_on_account") <strong>@{bankDetails.formatAccountHolderName}</strong></p>
+ <p id="acc-sort-code" class="govuk-body govuk-!-margin-bottom-1">@Messages("repayment_details.sort_code") <strong>@{bankDetails.formatSortCode}</strong></p>
+ <p id="acc-number" class="govuk-body">@Messages("repayment_details.account_number") <strong>@{bankDetails.obscureBankAccountNumber}</strong></p>
+ <p ><a class="govuk-link govuk-!-font-size-19" href='@routes.Controller.viewRepaymentAccount' id="manage-account">@Messages("repayment_details.manage_repayment")</a></p>
+ }
+}
+
+@if((addressExists && (!(showBankDetails))) && (!(inflightBankDetails))) {
+<h2 class="govuk-heading-l" >@Messages("repayment_details.repayment_details")</h2>
+<p class="govuk-body govuk-!-margin-bottom-3" >@Messages("repayment_details.send_cheque")</p>
+<p id="address" class="govuk-body govuk-!-margin-bottom-3" >@Html(address.getOrElse(""))</p>
+<p class="govuk-body govuk-!-margin-bottom-3">@Messages("repayment_details.faster_payment") <a class="govuk-link"  href='@routes.BankAccountCocController.startBankAccountCocJourney(ReturnPage("show-vrt"))' id="call-bac">@Messages("repayment_details.repayment_bank_account")</a></p>
+<p class="govuk-body"><a class="govuk-link"  href=@{viewConfig.updateCorrespondenceAddress}>@Messages("repayment_details.update_business_address")</a></p>
+}
+

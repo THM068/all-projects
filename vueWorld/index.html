@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Vue Mastery</title>
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+    <style>
+        .box {
+            padding: 100px 0;
+            width: 400px;
+            text-align: center;
+            background:#ddd ;
+            margin: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<h4>Welcome to Vue</h4>
+<div id="app">
+    <h1 v-if="showTitle">{{title}}</h1>
+    <h1 v-show="showTitle"> Using a v-show</h1>
+    <p>
+        {{description}}
+    </p>
+    <button @click="count++" :disabled="isButtonDisabled">
+        Click Me {{count}}
+    </button>
+    <button @click="changeTitle('Cheeky midge')" class="button is-primary is-small">Uppercase</button>
+    <button @click="toggleTitle">Hide title</button>
+    <p></p>
+    <div class="box" v-on:mouseover="handleEvents">mouseover enter</div>
+    <div class="box" @mouseleave="handleEvents">mouseleave</div>
+    <div class="box" @dblclick="handleEvents">double click</div>
+    <div class="box" ></div>
+
+    <ul>
+        <li v-for="(name,index) in names">
+            {{name}}  {{index}}
+        </li>
+    </ul>
+</div>
+<hr>
+<div id="todo-app">
+   {{names}}
+    <div v-bind:id="myId">
+        Raw Html <span v-html="rawHtml"></span>
+    </div>
+    <div v-bind="multipleAttr"> container with multiple attributes</div>
+
+    <form action="/test" @submit.prevent="onsubmit()">
+        <input type="text" value="Thando" v-if="false">
+        <input type="submit" value="Enter">
+    </form>
+
+
+</div>
+
+<!-- Import App -->
+<script src="./main.js"></script>
+
+<script>
+    const mount = app.mount('#app')
+    const  mountTodo = todoApp.mount("#todo-app")
+</script>
+</body>
+</html>

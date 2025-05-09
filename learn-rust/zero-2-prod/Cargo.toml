@@ -1,0 +1,25 @@
+[package]
+name = "zero-2-prod"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+src="src/lib.rs"
+
+[[bin]]
+src="src/main.rs"
+name="zero-2-prod"
+
+[dependencies]
+actix-web = "4.5.1"
+tokio = { version = "1.37.0", features = ["macros", "rt-multi-thread"] }
+serde = { version = "1.0.198", features = ["derive"] }
+chrono = "0.4.38"
+uuid = { version = "1.8.0", features = ["v4",  "fast-rng","macro-diagnostics"] }
+tracing = { version = "0.1.26", features = ["log"] }
+env_logger = "0.11.3"
+
+[dev-dependencies]
+reqwest = { version = "0.12.4", features = ["json"] }
+serde = { version = "1.0.198", features = ["derive"] }

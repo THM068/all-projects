@@ -1,0 +1,120 @@
+@*
+ * Copyright 2024 HM Revenue & Customs
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *@
+
+@import pages.UKPropertySummaryPage
+@import pages.foreign.ForeignPropertySummaryPage
+@import pages.ukandforeignproperty.UkAndForeignPropertySummaryPage
+@import viewmodels.summary.TaskListItem
+@import viewmodels.summary.TaskListTag.{CanNotStart, Completed}
+
+@this(
+        layout: templates.Layout,
+        govukTag: GovukTag
+)
+
+
+@(ukproperty: UKPropertySummaryPage, foreignProperty: ForeignPropertySummaryPage, ukAndForeignProperty: UkAndForeignPropertySummaryPage)(implicit request: Request[_], messages: Messages)
+
+@taskListSection(items: Seq[TaskListItem]) = {
+    <ol class="govuk-task-list">
+    @for(item <- items) {
+
+        @if(item.taskListTag == CanNotStart){
+        <li class="govuk-task-list__item">
+            <div class="govuk-task-list__name-and-hint">
+                <div>
+                    @messages(s"${item.content}")
+                </div>
+            </div>
+            <div class="govuk-task-list__status govuk-task-list__status--cannot-start-yet" id="@{item.id}" > @messages(s"common.${item.taskListTag.message}") </div>
+        </li>
+        } else {
+        <li class="govuk-task-list__item govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" aria-describedby="@{
+                    item.id
+                }" href="@{
+                    item.call
+                }"  id="@{
+                item.id
+            }">@messages(s"${item.content}")</a>
+            </div>
+            <div class="govuk-task-list__status">
+                @if(!item.taskListTag.cssClass.isBlank) {
+                @govukTag(Tag(content = Text(messages(s"common.${item.taskListTag.message}")), classes = s"${item.taskListTag.cssClass}"))
+                } else {
+                @messages(s"common.${item.taskListTag.message}")
+                }
+            </div>
+        </li>
+        }
+
+    }
+    </ol>
+}
+
+@layout(
+    pageTitle = titleNoForm(messages("summary.title")),
+    showBackLink = true
+) {
+
+    <h1 class="govuk-heading-l">@messages("summary.page.heading")</h1>
+
+    @if(ukproperty.startItems.nonEmpty) {
+        <h2 class="govuk-heading-m">@messages("summary.aboutUKProperties.heading")</h2>
+        @taskListSection(ukproperty.startItems)
+    }
+
+    @if(ukproperty.rentalsRows.nonEmpty) {
+        <h2 class="govuk-heading-m">@messages("summary.rentals.heading")</h2>
+        @taskListSection(ukproperty.rentalsRows)
+    }
+
+    @if(ukproperty.rentARoomRows.nonEmpty) {
+        <h2 class="govuk-heading-m">@messages("summary.rentARoom.heading")</h2>
+        @taskListSection(ukproperty.rentARoomRows)
+    }
+
+    @if(ukproperty.combinedItems.nonEmpty) {
+        <h2 class="govuk-heading-m">@messages("summary.combined.heading")</h2>
+        @taskListSection(ukproperty.combinedItems)
+    }
+
+    @if(ukproperty.startItems.nonEmpty && foreignProperty.startItems.nonEmpty) {
+        <h2 class="govuk-heading-m">@messages("ukAndForeign.summary.title")</h2>
+        @taskListSection(ukAndForeignProperty.startItems)
+    }
+
+    @if(foreignProperty.startItems.nonEmpty) {
+        <h2 class="govuk-heading-m">@messages("foreign.summary.title")</h2>
+        @taskListSection(foreignProperty.startItems)
+
+        @for(item <- foreignProperty.startItems) {
+            @if(foreignProperty.foreignIncomeCountries.nonEmpty && item.id == "foreign_property_select_country" && item.taskListTag == Completed) {
+                @for(country <- foreignProperty.foreignIncomeCountries) {
+                    <h2 class="govuk-heading-m">@messages(s"foreign.heading", country.name) </h2>
+                    @taskListSection(foreignProperty.foreignPropertyItems(country.code))
+                }
+            }
+        }
+    }
+
+
+}
+
+@{
+    // $COVERAGE-OFF$
+}

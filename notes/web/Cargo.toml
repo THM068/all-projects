@@ -1,0 +1,49 @@
+[package]
+name = "notes-web"
+version = "0.0.1"
+edition = "2021"
+publish = false
+
+[lib]
+# examples in docs don't run without a running database, etc.
+doctest = false
+
+[features]
+test-helpers = ["dep:serde_json", "dep:tower", "dep:hyper", "dep:notes-macros"]
+
+[dependencies]
+anyhow = "1.0"
+axum = { version = "0.7", features = ["macros"] }
+notes-config = { path = "../config" }
+
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1.34", features = ["full"] }
+tower-http = { version = "0.6", features = ["full"] }
+tracing = "0.1"
+tracing-panic = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "registry", "fmt"] }
+
+serde_json = { version = "1.0", optional = true }
+thiserror = "2.0"
+tower = { version = "0.5", features = ["util"], optional = true }
+hyper = { version = "1.0", features = ["full"], optional = true }
+sea-orm = { version = "1.1.0-rc.3", features = [ "sqlx-postgres", "sqlx-sqlite", "runtime-async-std-native-tls", "macros" ] }
+sqlx = "0.8.2"
+sea-orm-migration = "1.1.0-rc.3"
+chrono = "0.4.38"
+bcrypt = "0.15.1"
+log = "0.4.22"
+rdkafka = "0.36.2"
+jsonwebtoken = "8.3.0"
+dotenvy = "0.15.6"
+time = "0.3.36"
+askama = "0.12.1"
+firebase-rs = "2.2.0"
+
+notes-macros = { path = "../macros", optional = true }
+
+[dev-dependencies]
+fake = "3.0"
+googletest = "0.13"
+
+notes-web = { path = ".", features = ["test-helpers"] }

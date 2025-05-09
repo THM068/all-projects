@@ -1,0 +1,20 @@
+[package]
+name = "with-axum-htmx-askama"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7.5"
+tokio = { version = "1.38.0", features = ["full"] }
+askama = "0.12.1"
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+tower = "0.4.13"
+tower-http = { version = "0.5.2", features = ["fs"] }
+anyhow = "1.0.86"
+serde = { version = "1.0.203", features = ["derive"] }
+serde_json = { version = "1.0.68" }
+log = "0.4.21"
+nanoid = "0.4.0"
+
+

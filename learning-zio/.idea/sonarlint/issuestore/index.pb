@@ -1,0 +1,41 @@
+
+9
+	build.sbt,7/4/74b95601c3a6d9d565cd312fac64094ec0f9d847
+I
+src/main/scala/Main.scala,8/c/8c63ea94db1b20e2191a156b92d1f99c6c1b2b09
+V
+&src/main/scala/ZioEitherFromExpr.scala,0/8/0833c969bf065a25f77566ad3dc750cd4ffd9c6b
+O
+src/main/scala/ZioArgTest.scala,6/c/6c48c1744773063f2bec661f7fcf3bb59225aa75
+W
+'src/main/scala/ZioHttpWithTimeout.scala,6/c/6cb9337928e38eb6ee41bfe28d094809e630ee75
+B
+src/main/resources,6/c/6c9637339413ceb1f92f2f07d604bf21d2591685
+T
+$src/main/scala/ReadFromFileApp.scala,8/2/8298888123941e8c29002dbec951e55a0a1bb3d3
+R
+"src/main/scala/RefExample001.scala,5/6/56502d8973c8c5cd18f643ce0b1beba0074c8c4f
+R
+"src/main/scala/RefExample002.scala,6/5/65f81acd4a4cbeb52ef4fa5175938f6a04c6e1c4
+W
+'src/main/scala/tref/SimpleCounter.scala,a/f/afdad8e18541049a58d8dcc0d3db5df114b760ce
+^
+.src/main/scala/dependency/injection/Main.scala,a/a/aa85445d8762378e6f21d6d82331a0f7e7f035c1
+m
+=src/main/scala/dependency/injection/ZEnvironmentExample.scala,3/7/37568938bf995f7350a6ac00c49a0b82e67eb928
+Z
+*src/test/scala/learn/test/PersonSpec.scala,2/4/2487f8944ee4d78fef8edc247752d31f5b95940c
+P
+ src/main/scala/fibres/Main.scala,8/3/83a195bddd7ba016af4505c39dc5d0fd8c416a5a
+a
+1src/main/scala/fibres/InterruptFiberExample.scala,b/7/b7c7f47be9ff62c002971fe1c76f0b08cf8f4ac3
+Q
+!src/main/scala/streams/Main.scala,5/0/50ac93d545e82ca6df71e9152f7c947da37b3b62
+U
+%src/main/scala/streams/ReadFile.scala,1/1/1123d915690979e6e29c96e833ea5592ee6d7dc9
+R
+"src/main/scala/HelloWorldApp.scala,6/c/6c12b4baf2f3c4844d8e51cfd776217500cade03
+O
+src/main/scala/ZioHttpApp.scala,0/1/01bb06401316c8ee8c5b7e44dcf64b6e53b183ff
+V
+&src/main/scala/ZioAppsInParallel.scala,5/1/5106e45b7e189b92c8d9cdaa107f87a95110b7ad

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link href="/assets/css/bulma.min.css" rel="stylesheet"/>
+    <!-- Allow any inheriting page to set it's own title -->
+    <title>{% block title %}{{ title }}{% endblock %}</title>
+
+    <!-- Allow any inheriting page to extend head with additional assets -->
+    {% block head %}{% endblock %}
+</head>
+<body>
+<div id="content" class="container px-100">
+    <!-- Inheriting pages will have their content rendered here, similar to app root in React, Angular, etc. -->
+    {% block content %}{% endblock %}
+</div>
+</body>
+<script src="/assets/js/htmx.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+</html>

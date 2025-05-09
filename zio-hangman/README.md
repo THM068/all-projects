@@ -1,0 +1,1 @@
+Simple implementation of the Hangman game using ZIO, based on [Functional Effects](https://github.com/jdegoes/functional-effects/blob/master/src/main/scala/net/degoes/zio/09-games.scala#L45) workshop by John De Goes

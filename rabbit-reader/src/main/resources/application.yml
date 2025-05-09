@@ -1,0 +1,13 @@
+micronaut:
+  server:
+    port: 9082
+  application:
+    name: rabbitReader
+rabbitmq:
+  host: e05imq01.int.oogway.id.bskyb.com
+  port: 5672
+  password: aAaaKP6BnYeH7zl7
+  username: oogwayadmin
+  virtual-host: int.oogway.id.bskyb.com
+
+

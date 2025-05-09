@@ -1,0 +1,98 @@
+@*
+ * Copyright 2023 HM Revenue & Customs
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *@
+
+@import model.des._
+@import model._
+@import uk.gov.hmrc.govukfrontend.views.html.components._
+@import config.ViewConfig
+
+@this(
+ mainTemplate: views.html.main_template,
+ govukWarningText: GovukWarningText,
+ govukButton: GovukButton,
+ viewConfig: ViewConfig
+)
+
+@(
+  bankDetailsOption: Option[BankDetails],
+  inFlight: Boolean,
+  returnPage : ReturnPage,
+  date: Option[String],
+  welshDate: Option[String]
+)(implicit request: Request[_], messages: Messages)
+
+@title = @{
+  if (inFlight) Messages("view_repayment_account.title.inFlight")
+  else Messages("view_repayment_account.title")
+}
+
+@mainTemplate(title = title) {
+ <div class="govuk-grid-row govuk-!-padding-bottom-2">
+  <div class="govuk-grid-column-two-thirds">
+   <h1 id="main-message" class="govuk-heading-xl">@title</h1>
+
+   @if(inFlight) {
+    @govukWarningText(WarningText(content = Text(Messages(
+      "view_repayment_account.warning", if(messages.lang.code == "en") {date.getOrElse("")} else if(messages.lang.code == "cy") {welshDate.getOrElse("")}
+    ))))
+   }
+
+   @bankDetailsOption.map{bankDetails =>
+
+   <dl class="summary-list summary-list--undivided">
+    <div class="summary-list__row" id="acc-name">
+     <dt class="govuk-body summary-list__key govuk-!-font-weight-bold">
+      @Messages("view_repayment_account.name_on_account")
+     </dt>
+     <dd class="govuk-body summary-list__value">
+      @{bankDetails.accountHolderName}
+     </dd>
+    </div>
+    <div class="summary-list__row" id="acc-sort-code">
+     <dt class="govuk-body summary-list__key govuk-!-font-weight-bold">
+      @Messages("view_repayment_account.sort_code")
+     </dt>
+     <dd class="govuk-body summary-list__value">
+      @{bankDetails.formatSortCode}
+     </dd>
+    </div>
+    <div class="summary-list__row" id="acc-number">
+     <dt class="govuk-body summary-list__key govuk-!-font-weight-bold">
+      @Messages("view_repayment_account.account_number")
+     </dt>
+     <dd class="govuk-body summary-list__value">
+      @{bankDetails.obscureBankAccountNumber}
+     </dd>
+    </div>
+   </dl>
+   <a class="govuk-link govuk-!-font-size-19" href='@routes.BankAccountCocController.startBankAccountCocJourney(returnPage)' id="call-bac">@{
+     if (!inFlight) Messages("view_repayment_account.change_account_details")
+     else Messages("")
+    }</a>
+
+   @if(inFlight) {
+    @govukButton(Button(
+     content = Text(Messages("view_repayment_account.return_to_vat")),
+     href = Some(viewConfig.viewVatAccount),
+     id = Some("return-to-vat")
+    ))
+   }
+
+  </div>
+ </div>
+}
+
+}

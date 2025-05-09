@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Taming Thymeleaf</title>
+  <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+<div class="container">
+  <h1>Taming Thymeleaf</h1>
+  <div>This is a thymeleaf page</div>
+
+  <h4 th:text="${pageTitle}"> Hello Page</h4>
+  <div th:insert="~{fragment :: separator}"></div>
+  <ul>
+    <li th:each="child : ${children}">
+      <span th:text="${child}"></span>
+    </li>
+  </ul>
+</div>
+
+<script src="/webjars/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/webjars/htmx.org/1.9.10/dist/htmx.min.js"></script>
+</body>
+</html>

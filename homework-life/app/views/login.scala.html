@@ -1,0 +1,20 @@
+@import views.html.helper.CSRF.formField
+@()(implicit requestHeader: RequestHeader, flash: Flash)
+
+@main("Login") {
+  <h3>Login </h3>
+
+    <form action="@routes.HomeController.validateLogin()" method="post">
+        @formField
+        <label for="username">
+            Username:
+            <input type="text" name="username">
+        </label>
+        <label for="password">
+            Password:
+            <input type="password" name="password">
+        </label>
+        <input type="submit" value="Login">
+    </form>
+
+}

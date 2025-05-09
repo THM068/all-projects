@@ -1,0 +1,26 @@
+# Add all the application routes to the app.routes file
+->         /hmrc-frontend             hmrcfrontend.Routes
+->         /                          health.Routes
+
+GET        /assets/*file                        controllers.Assets.versioned(path = "/public", file: Asset)
+
+#govuk link
+GET        /show-vrt                                                controllers.Controller.showVrt
+#V and C to use the following
+GET        /manage-or-track-vrt                                     controllers.ManageOrTrackController.manageOrTrackVrt
+POST       /manage-or-track-vrt                                     controllers.ManageOrTrackController.manageOrTrackSubmit
+
+#Interenal route
+GET        /non-mtd-user                                            controllers.Controller.nonMtdUser
+GET        /view-repayment-account                                  controllers.Controller.viewRepaymentAccount
+POST       /manage-or-track-submit                                  controllers.ManageOrTrackController.manageOrTrackSubmit
+GET        /signout                                                 controllers.Controller.signout
+GET        /bank-account-coc/start-journey/:returnPage              controllers.BankAccountCocController.startBankAccountCocJourney(returnPage : ReturnPage)
+GET        /view-progress/:periodKey                                controllers.Controller.viewProgress(periodKey : PeriodKey)
+GET        /spj/:amountInPence                                      controllers.PayApiController.startPaymentsJourney(amountInPence : Long)
+GET        /shuttered                                               controllers.ShutteredController.shuttered
+GET        /vrt-vat-registration-cancelled                          controllers.Controller.deregistered
+
+#Session
+GET         /session/keep-alive                                     controllers.TimeoutController.keepAliveSession
+GET         /delete-answers                                         controllers.TimeoutController.killSession

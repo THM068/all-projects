@@ -1,0 +1,3 @@
+moduleName = app
+moduleVersion = 0.1.0
+extensionClasses = com.master.model.PersonExtension

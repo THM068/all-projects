@@ -1,0 +1,8 @@
+sea generate entity -o src/entities -u postgres://postgres:postgres@localhost:15676/halifax-church
+
+sea migrate generate role_user -d ./src/migrator
+
+
+sea generate entity -o src/entities -u postgres://postgres:postgres@localhost:15676/halifax-church
+
+sea generate entity -o db/entities -u postgres://postgres:postgres@localhost:15676/world

@@ -1,0 +1,21 @@
+<!-- prettier-ignore -->
+{% extends "../base.html" %}
+
+{% block title %}Url Shortener{% endblock %}
+
+{% block content %}
+<h4 class="title">Add a url</h4>
+<div class="grid place-items-center h-screen mt-5">
+    <form hx-post="/url-shortener"
+          hx-target="#url-list"
+          hx-swap="innerHtml">
+        <div class="field">
+            <input name="url" type="text" class="is-bordered is-medium" placeholder="Enter a url">
+            <button class="button is-link is-small">Add Url</button>
+        </div>
+    </form>
+</div>
+<div class="grid">
+    <div id="url-list"></div>
+</div>
+{% endblock %}

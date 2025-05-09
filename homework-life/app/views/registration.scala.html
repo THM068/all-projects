@@ -1,0 +1,15 @@
+@(registerForm: Form[RegisterData])(implicit messagesRequestHeader: MessagesRequestHeader, flash: Flash)
+
+@main("Register a User") {
+  <h3>User Registration </h3>
+  @helper.form(action = routes.LoginController.validateRegistration()) {
+    @helper.CSRF.formField
+    @helper.inputText(registerForm("name"),'_label -> "Name", '_help -> "Enter your name")
+    @helper.inputText(registerForm("username"), '_label -> "Username")
+    @helper.inputText(registerForm("email"), '_label -> "Email")
+    @helper.inputText(registerForm("password"), '_label -> "Password")
+    <div>
+      <button class="button">Submit</button>
+    </div>
+  }
+}

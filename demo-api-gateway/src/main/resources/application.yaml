@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: post-route
+          uri: http://localhost:9999
+          predicates:
+            - Path=/post-app/api/**

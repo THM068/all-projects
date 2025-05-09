@@ -1,0 +1,116 @@
+@*
+ * Copyright 2023 HM Revenue & Customs
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *@
+
+@import config.ViewConfig
+@import model._
+@import formaters.CommonFormatter
+
+@this(mainTemplate: views.html.main_template, viewConfig: ViewConfig)
+
+@(
+  viewProgress: ViewProgress,
+  showEstimatedRepaymentDat: Boolean,
+  amountDescription: String,
+  pageTitle: String,
+  showHistoryUrl: Boolean,
+  showPayUrl: Boolean,
+  amountInPence: Long
+)(implicit request: Request[_], messages: Messages)
+
+
+
+@mainTemplate(title = pageTitle, backButtonUrl = Some(Call("GET", viewConfig.showResultsUrl))) {
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-3">
+            <h1 id="main-message" class="govuk-heading-xl">@{pageTitle}</h1>
+
+            @if(viewProgress.repaymentSuspended) {
+                <div id="repayment-suspended-action-required" class="govuk-!-margin-bottom-9">
+                    <h2 class="govuk-body govuk-!-margin-bottom-0">@Messages("view_progress.action_required")</h2>
+                    <h2 class="govuk-!-margin-bottom-2">@Messages("view_progress.submit_vat_return")</h2>
+                    <div class="govuk-!-margin-bottom-3">
+                        @Html(Messages("view_progress.submit_your_return"))
+                    </div>
+                </div>
+            } else {
+                <div class="govuk-grid-row govuk-!-margin-bottom-9">
+                    <div class="govuk-grid-column-one-half">
+                        <h2 class="govuk-body govuk-!-margin-bottom-0">@{
+                            amountDescription
+                        }</h2>
+                        <p class="govuk-heading-l govuk-!-padding-top-1" id="amount">£@{
+                            CommonFormatter.formatAmount(viewProgress.amount)
+                        }</p>
+                        @{
+                            if(showHistoryUrl) {
+                                    <p id="history-url"><a class="govuk-link" href={viewConfig.viewVatAccount}>{Messages("view_progress.view_payments_history")}</a></p>
+                            }
+                        }
+                        @{
+                            if(showPayUrl) {
+
+                                    <p id="pay-url"><a class="govuk-link" href={routes.PayApiController.startPaymentsJourney(amountInPence).url}>{Messages("view_progress.pay_now")}</a></p>
+                            }
+                        }
+                    </div>
+
+                    @{
+                        if(showEstimatedRepaymentDat) {
+                                <div class="govuk-grid-column-one-half">
+                                <h2 class="govuk-body govuk-!-margin-bottom-0">{Messages("view_progress.estimated_repayment_date")}</h2>
+                                <p class="govuk-heading-l govuk-!-padding-top-1" id="repay-date">{CommonFormatter.formatDate(viewProgress.estimatedRepaymentDate)}</p>
+                                </div>
+                        }
+                    }
+                </div>
+            }
+
+            @{
+                if (viewProgress.isComplete) {
+                <h2 class="govuk-heading-l">{Messages("view_progress.repayment_history")}</h2>
+                }
+                else {
+                <h2 class="govuk-heading-l">{Messages("view_progress.repayment_progress")}</h2>
+                }
+            }
+
+
+
+            <ol class="hmrc-timeline">
+            @for(whsf <- viewProgress.whatsHappenedSoFar.toList) {
+                <li class="hmrc-timeline-event" id="@{whsf.riskingStatus}@{whsf.complete}_timeline">
+                    <h2 class="hmrc-timeline-event-title govuk-heading-m" id="@{whsf.riskingStatus}@{whsf.complete}_event">@{whsf.title}</h2>
+                    <p class="govuk-body hmrc-timeline-event-meta" id="@{whsf.riskingStatus}@{whsf.complete}_date">@{CommonFormatter.formatDate(whsf.date)}</p>
+                    <p class="govuk-body" id="@{whsf.riskingStatus}@{whsf.complete}_description">@Html(whsf.description)</p>
+                </li>
+            }
+            </ol>
+
+
+        </div>
+    </div>
+
+    @{
+        <p class="govuk-body">
+            <a class="govuk-link" id="webchat" href={viewConfig.webchatUrl} rel="noreferrer noopener" target="_blank">
+                {messages("view_progress.repayment.AskHMRC")}
+            </a>
+        </p>
+    }
+}
+
+

@@ -1,0 +1,16 @@
+import com.adverity.ProjectionRequest
+
+model {
+    List<Map<String, Object>> result
+    ProjectionRequest projectionRequest
+}
+
+json {
+    String betweenKey = "\$between"
+    if(projectionRequest.filters.containsKey(betweenKey) ) {
+        String from = projectionRequest.filters[(betweenKey)]["from"]
+        String to = projectionRequest.filters[(betweenKey)]["to"]
+        date "$from - $to"
+    }
+    result result
+}

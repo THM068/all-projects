@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7f1a0884-27f3-4b71-9fc7-d167592d8be5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/advent_of_code/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/confexplorer/src/AppState.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/confexplorer/src/VideoListState.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/confexplorer/src/VideoPlayer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/confexplorer/src/react-player.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/confexplorer1.1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/id-cybertron-api-tests/src/main/java/id/cybertron/api/tests/clients/CybertronClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/id-cybertron-api-tests/src/main/java/id/cybertron/api/tests/clients/operations/ModifyProfileMobile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/id-cybertron-api-tests/src/main/java/id/cybertron/api/tests/model/ErrorMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/id-cybertron-api-tests/src/main/resources/application-e05.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/id-cybertron-api-tests/src/main/resources/application-f02.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/id-cybertron-api-tests/src/test/groovy/id/cybertron/api/tests/ModifyProfileMobileSpec.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/id-cybertron-api-tests/src/test/groovy/id/cybertron/api/tests/SigninSpec.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kigali-city/kigali-api/src/com/kigali/city/dao/FaultReportsDAO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kigali-city/kigali-api/src/com/kigali/city/domains/FaultReports.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kigali-city/kigali-api/src/com/kigali/city/domains/enums/FaultStatus.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kigali-city/kigali-api/src/com/kigali/city/domains/enums/GraffitiLocation.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kigali-city/kigali-api/src/com/kigali/city/domains/enums/ReportType.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kigali-city/kigali-api/src/com/kigali/city/domains/enums/RubbishLocation.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-java/learn-kotlin/src/main/kotlin/learn/kotlin/collections/MainFilter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-java/learn-kotlin/src/main/kotlin/learn/kotlin/coroutines/MainChannel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-java/learn-kotlin/src/main/kotlin/learn/kotlin/coroutines/Main_Flow.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-java/learn-kotlin/src/main/kotlin/learn/kotlin/coroutines/Mainflow.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-java/learn-kotlin/src/main/kotlin/learn/kotlin/delegates/DelegateFiles.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-java/learn-kotlin/src/main/kotlin/learn/kotlin/delegates/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-java/learn-kotlin/src/main/kotlin/learn/kotlin/io/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-java/learn-kotlin/src/main/kotlin/learn/kotlin/scopes/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-java/learn-kotlin/src/main/resources/book_data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-java/learn-kotlin/src/test/kotlin/learn/kotlin/delegates/SmartPhoneTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-java/learn-scala/src/main/scala/workbench/json/Main.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smiley-journal/smiley-journal-grpc/ssl/server.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smiley-journal/smiley-journal-grpc/ssl/server.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smiley-journal/smiley_journal/lib/src/grpc/client/cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advent_of_code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/advent_of_code/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/confexplorer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/confexplorer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/confexplorer/src/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/confexplorer/src/App.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/confexplorer/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/confexplorer/src/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/confexplorer/src/VideoList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/confexplorer/src/VideoList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/confexplorer/src/VideoListProps.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/confexplorer/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/confexplorer/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/confexplorer1.1/src/Home.kt" beforeDir="false" afterPath="$PROJECT_DIR$/confexplorer1.1/src/Home.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/confexplorer1.1/src/VideoList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/confexplorer1.1/src/VideoList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finagle/doc/src/sphinx/code/quickstart/Server.scala" beforeDir="false" afterPath="$PROJECT_DIR$/finagle/doc/src/sphinx/code/quickstart/Server.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc-java-course/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-java-course/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc-java-course/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-java-course/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc-java-course/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-java-course/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc-java-course/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-java-course/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc-java-course/src/main/java/com/github/simplesteph/grpc/greeting/client/GreetingClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-java-course/src/main/java/com/github/simplesteph/grpc/greeting/client/GreetingClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc-java-course/src/main/java/com/github/simplesteph/grpc/greeting/server/GreetingServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-java-course/src/main/java/com/github/simplesteph/grpc/greeting/server/GreetingServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc-java-course/ssl/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-java-course/ssl/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc-java-course/ssl/ca.key" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-java-course/ssl/ca.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc-java-course/ssl/instructions.sh" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-java-course/ssl/instructions.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc-java-course/ssl/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-java-course/ssl/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc-java-course/ssl/server.csr" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-java-course/ssl/server.csr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc-java-course/ssl/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-java-course/ssl/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc-java-course/ssl/server.pem" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-java-course/ssl/server.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/id-cybertron-api-tests/src/main/java/id/cybertron/api/tests/clients/SigninOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/id-cybertron-api-tests/src/main/java/id/cybertron/api/tests/clients/operations/SigninOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/id-cybertron-api-tests/src/main/java/id/cybertron/api/tests/model/SigninRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/id-cybertron-api-tests/src/main/java/id/cybertron/api/tests/model/requests/SigninRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/id-cybertron-api-tests/src/main/java/id/cybertron/api/tests/model/SigninSuccessModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/id-cybertron-api-tests/src/main/java/id/cybertron/api/tests/model/success/SigninSuccessModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-coroutines/src/contributors/Contributors.kt" beforeDir="false" afterPath="$PROJECT_DIR$/intro-coroutines/src/contributors/Contributors.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-coroutines/src/contributors/ContributorsUI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/intro-coroutines/src/contributors/ContributorsUI.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-coroutines/src/contributors/GitHubService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/intro-coroutines/src/contributors/GitHubService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-coroutines/src/tasks/Aggregation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/intro-coroutines/src/tasks/Aggregation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-coroutines/src/tasks/Request1Blocking.kt" beforeDir="false" afterPath="$PROJECT_DIR$/intro-coroutines/src/tasks/Request1Blocking.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-coroutines/src/tasks/Request2Background.kt" beforeDir="false" afterPath="$PROJECT_DIR$/intro-coroutines/src/tasks/Request2Background.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-coroutines/src/tasks/Request4Suspend.kt" beforeDir="false" afterPath="$PROJECT_DIR$/intro-coroutines/src/tasks/Request4Suspend.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-coroutines/src/tasks/Request5Concurrent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/intro-coroutines/src/tasks/Request5Concurrent.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kigali-city/kigali-api/src/com/kigali/city/beans/ShiroConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/kigali-city/kigali-api/src/com/kigali/city/mobile/beans/ShiroConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kigali-city/kigali-api/src/com/kigali/city/services/UserService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/kigali-city/kigali-api/src/com/kigali/city/services/UserService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kigali-city/kigali-api/test/ApplicationTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/kigali-city/kigali-api/test/ApplicationTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kotlin-ktor-realworld-example-app/src/main/kotlin/io/realworld/app/config/AppConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/kotlin-ktor-realworld-example-app/src/main/kotlin/io/realworld/app/config/AppConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kotlin-ktor-realworld-example-app/src/main/kotlin/io/realworld/app/config/DbConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/kotlin-ktor-realworld-example-app/src/main/kotlin/io/realworld/app/config/DbConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kotlin-ktor-realworld-example-app/src/main/kotlin/io/realworld/app/utils/JwtProvider.kt" beforeDir="false" afterPath="$PROJECT_DIR$/kotlin-ktor-realworld-example-app/src/main/kotlin/io/realworld/app/utils/JwtProvider.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-java/learn-kotlin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/learn-java/learn-kotlin/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-java/learn-kotlin/src/main/kotlin/learn/kotlin/coroutines/MainDispatchIO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/learn-java/learn-kotlin/src/main/kotlin/learn/kotlin/coroutines/MainDispatchIO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-java/learn-kotlin/src/main/kotlin/learn/kotlin/coroutines/MainRunblocking.kt" beforeDir="false" afterPath="$PROJECT_DIR$/learn-java/learn-kotlin/src/main/kotlin/learn/kotlin/coroutines/MainRunblocking.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-java/learn-kotlin/src/main/kotlin/learn/kotlin/coroutines/MaincoroutineScope.kt" beforeDir="false" afterPath="$PROJECT_DIR$/learn-java/learn-kotlin/src/main/kotlin/learn/kotlin/coroutines/MaincoroutineScope.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-java/learn-scala/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/learn-java/learn-scala/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-java/learn-scala/src/main/scala/workbench/formatting/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/learn-java/learn-scala/src/main/scala/workbench/formatting/Main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-java/src/main/java/learn/java/api/SigninClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn-java/src/main/java/learn/java/api/SigninClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-java/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/learn-java/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smiley-journal/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/smiley-journal/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smiley-journal/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/smiley-journal/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smiley-journal/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/smiley-journal/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smiley-journal/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/smiley-journal/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smiley-journal/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/smiley-journal/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smiley-journal/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/smiley-journal/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smiley-journal/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/smiley-journal/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smiley-journal/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/smiley-journal/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smiley-journal/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/smiley-journal/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smiley-journal/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/smiley-journal/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smiley-journal/smiley-journal-grpc/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/smiley-journal/smiley-journal-grpc/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smiley-journal/smiley-journal-grpc/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smiley-journal/smiley-journal-grpc/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smiley-journal/smiley_journal/lib/src/grpc/client/grpc_client_singleton.dart" beforeDir="false" afterPath="$PROJECT_DIR$/smiley-journal/smiley_journal/lib/src/grpc/client/grpc_client_singleton.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smiley-journal/smiley_journal/lib/src/grpc/services/registration_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/smiley-journal/smiley_journal/lib/src/grpc/services/registration_service.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smiley-journal/smiley_journal/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/smiley-journal/smiley_journal/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smiley-journal/smiley_journal/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/smiley-journal/smiley_journal/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smiley-journal/smiley_journal/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/smiley-journal/smiley_journal/test/widget_test.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/advent_of_code" />
+  </component>
+  <component name="KonanWorkspace">
+    <executables />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1XnnIzqT1FmNKXEO8hxazemJ0Wa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/Workspace/id-cybertron" value="PREVIEW" />
+        <entry key="$USER_HOME$/Workspace/id-cybertron-secret-loader" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/finagle/doc/src/sphinx/code/quickstart" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f1a0884-27f3-4b71-9fc7-d167592d8be5" name="Default Changelist" comment="" />
+      <created>1581690650821</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581690650821</updated>
+      <workItem from="1581690660114" duration="93000" />
+      <workItem from="1590128087649" duration="3000" />
+    </task>
+    <servers />
+  </component>
+</project>

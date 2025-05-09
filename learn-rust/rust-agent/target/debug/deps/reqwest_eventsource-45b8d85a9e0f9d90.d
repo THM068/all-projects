@@ -1,0 +1,9 @@
+/Users/tma24/private_projects/learn-rust/rust-agent/target/debug/deps/libreqwest_eventsource-45b8d85a9e0f9d90.rmeta: /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/reqwest-eventsource-0.6.0/src/lib.rs /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/reqwest-eventsource-0.6.0/src/error.rs /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/reqwest-eventsource-0.6.0/src/event_source.rs /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/reqwest-eventsource-0.6.0/src/reqwest_ext.rs /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/reqwest-eventsource-0.6.0/src/retry.rs
+
+/Users/tma24/private_projects/learn-rust/rust-agent/target/debug/deps/reqwest_eventsource-45b8d85a9e0f9d90.d: /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/reqwest-eventsource-0.6.0/src/lib.rs /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/reqwest-eventsource-0.6.0/src/error.rs /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/reqwest-eventsource-0.6.0/src/event_source.rs /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/reqwest-eventsource-0.6.0/src/reqwest_ext.rs /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/reqwest-eventsource-0.6.0/src/retry.rs
+
+/Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/reqwest-eventsource-0.6.0/src/lib.rs:
+/Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/reqwest-eventsource-0.6.0/src/error.rs:
+/Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/reqwest-eventsource-0.6.0/src/event_source.rs:
+/Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/reqwest-eventsource-0.6.0/src/reqwest_ext.rs:
+/Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/reqwest-eventsource-0.6.0/src/retry.rs:

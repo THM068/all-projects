@@ -1,0 +1,129 @@
+/*
+ * Copyright 2021 - 2023 Sporta Technologies PVT LTD & the ZIO HTTP contributors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package zio.http
+
+import java.io.File
+
+import zio._
+import zio.test.Assertion._
+import zio.test.TestAspect.{mac, os, sequential, unix, withLiveClock}
+import zio.test.assertZIO
+
+import zio.http.internal.{DynamicServer, RoutesRunnableSpec, serverTestLayer}
+
+object StaticFileServerSpec extends RoutesRunnableSpec {
+
+  private val fileOk       = Handler.fromResource("TestFile.txt").sandbox.toRoutes.deploy
+  private val fileNotFound = Handler.fromResource("Nothing").sandbox.toRoutes.deploy
+
+  private val testArchivePath  = getClass.getResource("/TestArchive.jar").getPath
+  private val resourceOk       =
+    Handler
+      .fromResourceWithURL(new java.net.URI(s"jar:file:$testArchivePath!/TestFile.txt").toURL, Charsets.Utf8)
+      .sandbox
+      .toRoutes
+      .deploy
+  private val resourceNotFound =
+    Handler
+      .fromResourceWithURL(new java.net.URI(s"jar:file:$testArchivePath!/NonExistent.txt").toURL, Charsets.Utf8)
+      .sandbox
+      .toRoutes
+      .deploy
+
+  override def spec = suite("StaticFileServerSpec") {
+    serve.as(List(staticSpec))
+  }.provideShared(DynamicServer.live, serverTestLayer, Client.default) @@ withLiveClock @@ sequential
+
+  private def staticSpec = suite("Static RandomAccessFile Server")(
+    suite("fromResource")(
+      suite("file")(
+        test("should have 200 status code") {
+          val res = fileOk.run().map(_.status)
+          assertZIO(res)(equalTo(Status.Ok))
+        },
+        test("should have content-length") {
+          val res = fileOk.run().map(_.header(Header.ContentLength))
+          assertZIO(res)(isSome(equalTo(Header.ContentLength(7L))))
+        },
+        test("should have content") {
+          val res = fileOk.run().flatMap(_.body.asString)
+          assertZIO(res)(equalTo("foo\nbar"))
+        },
+        test("should have content-type") {
+          val res = fileOk.run().map(_.header(Header.ContentType))
+          assertZIO(res)(isSome(equalTo(Header.ContentType(MediaType.text.plain, charset = Some(Charsets.Utf8)))))
+        },
+        test("should respond with empty if file not found") {
+          val res = fileNotFound.run().map(_.status)
+          assertZIO(res)(equalTo(Status.NotFound))
+        },
+      ),
+    ),
+    suite("fromFile")(
+      suite("failure on construction")(
+        test("should respond with 500") {
+          val res = Handler.fromFile(throw new Error("Wut happened?")).sandbox.toRoutes.deploy.run().map(_.status)
+          assertZIO(res)(equalTo(Status.InternalServerError))
+        },
+      ),
+      suite("unreadable file")(
+        test("should respond with 500") {
+          ZIO.blocking {
+            val tmpFile = File.createTempFile("test", "txt")
+            tmpFile.setReadable(false)
+            val res     = Handler.fromFile(tmpFile).sandbox.toRoutes.deploy.run().map(_.status)
+            assertZIO(res)(equalTo(Status.Forbidden))
+          }
+        } @@ os(o => o.isUnix || o.isMac),
+      ),
+      suite("invalid file")(
+        test("should respond with 500") {
+          final class BadFile(name: String) extends File(name) {
+            override def exists(): Boolean = throw new Error("Haha")
+          }
+          val res = Handler.fromFile(new BadFile("Length Failure")).sandbox.toRoutes.deploy.run().map(_.status)
+          assertZIO(res)(equalTo(Status.InternalServerError))
+        },
+      ),
+    ),
+    suite("fromResourceWithURL")(
+      suite("with 'jar' protocol")(
+        test("should have 200 status code") {
+          val res = resourceOk.run().map(_.status)
+          assertZIO(res)(equalTo(Status.Ok))
+        },
+        test("should have content-length") {
+          val res = resourceOk.run().map(_.header(Header.ContentLength))
+          assertZIO(res)(isSome(equalTo(Header.ContentLength(7L))))
+        },
+        test("should have content") {
+          val res = resourceOk.run().flatMap(_.body.asString)
+          assertZIO(res)(equalTo("foo\nbar"))
+        },
+        test("should have content-type") {
+          val res = resourceOk.run().map(_.header(Header.ContentType))
+          assertZIO(res)(isSome(equalTo(Header.ContentType(MediaType.text.plain, charset = Some(Charsets.Utf8)))))
+        },
+        test("should respond with empty if not found") {
+          val res = resourceNotFound.run().map(_.status)
+          assertZIO(res)(equalTo(Status.NotFound))
+        },
+      ),
+    ),
+  )
+
+}

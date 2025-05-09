@@ -1,0 +1,17 @@
+[package]
+name = "url-shortner-app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7.4"}
+shuttle-axum = "0.45.0"
+shuttle-runtime = "0.45.0"
+tokio = "1.28.2"
+nanoid = "0.4.0"
+axum-template = { version = "2.3.0", features = ["handlebars"] }
+handlebars = { version = "5.1.2", features = ["dir_source"] }
+serde = { version = "1.0.203", features = ["derive"] }
+serde_json = "1.0.117"
+httpc-test = "0.1.9"
+anyhow = "1.0.86"

@@ -1,0 +1,1 @@
+sea migrate generate bakery_table

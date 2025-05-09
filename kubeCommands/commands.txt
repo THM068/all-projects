@@ -1,0 +1,20 @@
+Create a deployment
+- kubectl create deployment hello-node --image=k8s.gcr.io/echoserver:1.4
+
+View deployment
+- kubectl get deployments
+
+View cluster event
+- kb get event
+
+Create a service
+- kb expose deployment <hello-node> --type=Loadbalancer --port=8080
+
+SSh into a pod
+k exec <pod> -it sh
+
+List containers in a pod
+- kb -n rango-signin-int --context dev  get pods rango-signin-789d8ccfc5-shszb -o jsonpath='{.spec.containers[*].name}'
+
+Logs in a container
+kb -n rango-signin-int --context dev logs -f  <pod: rango-signin-789d8ccfc5-shszb> -c <container: rango-signin>

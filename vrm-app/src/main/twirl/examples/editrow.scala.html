@@ -1,0 +1,19 @@
+@import html.main
+@(name: String = "Edit Row")
+
+@main(name) {
+  <h3>Edit Row</h3>
+  <div hx-get="/load-edit-rows" hx-trigger="load" hx-swap="innerHTML">
+    load rows to be deleted
+  </div>
+  <div hx-get="/login" hx-trigger="custom-event from:body">
+    Triggered by HX-Trigger header...
+  </div>
+
+  <script >
+      document.body.addEventListener("custom-event", function(evt){
+        alert("myEvent was triggered!");
+      })
+  </script>
+
+}

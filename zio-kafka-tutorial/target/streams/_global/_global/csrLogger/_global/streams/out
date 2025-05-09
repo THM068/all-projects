@@ -1,0 +1,15 @@
+[debug] downloaded https://repo1.maven.org/maven2/dev/zio/zio-streams_2.13/2.0.9/zio-streams_2.13-2.0.9.pom
+[debug] downloaded https://repo1.maven.org/maven2/dev/zio/zio-json_2.13/0.3.0-RC10/zio-json_2.13-0.3.0-RC10.pom
+[debug] downloaded https://repo1.maven.org/maven2/dev/zio/zio-kafka_2.13/2.1.1/zio-kafka_2.13-2.1.1.pom
+[debug] downloaded https://repo1.maven.org/maven2/dev/zio/zio-kafka_2.13/2.1.1/zio-kafka_2.13-2.1.1.jar
+[debug] downloaded https://repo1.maven.org/maven2/dev/zio/zio-streams_2.13/2.0.9/zio-streams_2.13-2.0.9.jar
+[debug] downloaded https://repo1.maven.org/maven2/dev/zio/zio-json_2.13/0.3.0-RC10/zio-json_2.13-0.3.0-RC10.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/3.4.0/kafka-clients-3.4.0.jar
+[debug] downloaded https://repo1.maven.org/maven2/dev/zio/zio-json_2.13/0.3.0-RC10/zio-json_2.13-0.3.0-RC10-sources.jar
+[debug] downloaded https://repo1.maven.org/maven2/dev/zio/zio-streams_2.13/2.0.9/zio-streams_2.13-2.0.9-sources.jar
+[debug] downloaded https://repo1.maven.org/maven2/dev/zio/zio-kafka_2.13/2.1.1/zio-kafka_2.13-2.1.1-sources.jar
+[debug] downloaded https://repo1.maven.org/maven2/dev/zio/zio-streams_2.13/2.0.9/zio-streams_2.13-2.0.9-javadoc.jar
+[debug] downloaded https://repo1.maven.org/maven2/dev/zio/zio-json_2.13/0.3.0-RC10/zio-json_2.13-0.3.0-RC10-javadoc.jar
+[debug] downloaded https://repo1.maven.org/maven2/dev/zio/zio-kafka_2.13/2.1.1/zio-kafka_2.13-2.1.1-javadoc.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/3.4.0/kafka-clients-3.4.0-javadoc.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/3.4.0/kafka-clients-3.4.0-sources.jar

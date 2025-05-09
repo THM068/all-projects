@@ -1,0 +1,90 @@
+/*
+  Breakpoints
+*/
+
+@mixin break($breakpoint) {
+  // Retrieves the value from the key
+  $value: map-get($breakpoints, $breakpoint);
+
+  // If the key exists in the map
+  @if $value != null {
+    // Prints a media query based on the value
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+/*
+  Override helpers
+*/
+@mixin define-override-spacing($type) {
+
+  $_spacing-directions: (
+    "top",
+    "right",
+    "bottom",
+    "left"
+  ) !default;
+
+  @each $space in map-keys($govuk-spacing-points) {
+    
+    $space-value: map-get($govuk-spacing-points, $space);
+
+    @each $direction in $_spacing-directions {
+
+      .govuk-\!-#{$type}-#{$direction}-#{$space} {
+        margin-#{$direction}: $space-value !important;
+      }
+
+    }
+
+  }
+}
+@include define-override-spacing('margin');
+@include define-override-spacing('padding');
+
+/*
+  Spacing helpers
+*/
+
+@mixin _space($space, $attr: 'margin', $direction: 'bottom') {
+  #{$attr}-#{$direction}: map-get($govuk-spacing-points, $space)
+}
+
+@mixin _space-margin($space, $direction) {
+  @include _space($space, 'margin', $direction)
+}
+@mixin _space-padding($space, $direction) {
+  @include _space($space, 'padding', $direction)
+}
+
+@mixin govuk-responsive-padding($space, $direction) {
+    padding-#{$direction}: map-get($govuk-spacing-points, $space);
+}
+
+
+/*
+  Clearfix
+*/
+
+@mixin govuk-clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+/* 
+  lte IE8 polyfill
+*/
+@mixin govuk-if-ie8 {
+  @content;
+}

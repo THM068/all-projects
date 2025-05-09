@@ -1,0 +1,11 @@
+@(todoList: Seq[String], name: String, todoHeader: => scala.xml.Elem)(implicit flash: Flash)
+
+
+
+@main("Todo list") {
+    @todoHeader
+    <h3>Welcome @name and username @flash.get("username")</h3>
+    <ul>
+        @templates._todoListTemplate(todoList)
+    </ul>
+}

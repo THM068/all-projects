@@ -1,0 +1,17 @@
+@import views.html.helper.CSRF.formField
+@(loginForm: Form[LoginData])(implicit requestHeader: MessagesRequestHeader, flash: Flash)
+@()
+
+@main("Login Form") {
+    <h3>Login Form</h3>
+    <div>
+        @helper.form(action = routes.LoginController.validateLogin()) {
+            @helper.CSRF.formField
+            @helper.inputText(loginForm("Username"))
+            @helper.inputText(loginForm("Password"))
+            <div>
+                <button class="button">Submit</button>
+            </div>
+        }
+    </div>
+}

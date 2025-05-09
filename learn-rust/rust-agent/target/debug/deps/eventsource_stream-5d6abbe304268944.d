@@ -1,0 +1,10 @@
+/Users/tma24/private_projects/learn-rust/rust-agent/target/debug/deps/libeventsource_stream-5d6abbe304268944.rmeta: /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/eventsource-stream-0.2.3/src/lib.rs /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/eventsource-stream-0.2.3/src/event.rs /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/eventsource-stream-0.2.3/src/event_stream.rs /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/eventsource-stream-0.2.3/src/parser.rs /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/eventsource-stream-0.2.3/src/traits.rs /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/eventsource-stream-0.2.3/src/utf8_stream.rs
+
+/Users/tma24/private_projects/learn-rust/rust-agent/target/debug/deps/eventsource_stream-5d6abbe304268944.d: /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/eventsource-stream-0.2.3/src/lib.rs /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/eventsource-stream-0.2.3/src/event.rs /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/eventsource-stream-0.2.3/src/event_stream.rs /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/eventsource-stream-0.2.3/src/parser.rs /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/eventsource-stream-0.2.3/src/traits.rs /Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/eventsource-stream-0.2.3/src/utf8_stream.rs
+
+/Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/eventsource-stream-0.2.3/src/lib.rs:
+/Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/eventsource-stream-0.2.3/src/event.rs:
+/Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/eventsource-stream-0.2.3/src/event_stream.rs:
+/Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/eventsource-stream-0.2.3/src/parser.rs:
+/Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/eventsource-stream-0.2.3/src/traits.rs:
+/Users/tma24/.cargo/registry/src/index.crates.io-6f17d22bba15001f/eventsource-stream-0.2.3/src/utf8_stream.rs:

@@ -1,0 +1,8 @@
+blnk
+*/node_modules
+node_modules
+.env
+.idea
+blnk.json
+promtail
+dump.rdb

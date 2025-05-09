@@ -1,0 +1,90 @@
+@*
+ * Copyright 2023 HM Revenue & Customs
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *@
+
+@import config.ViewConfig
+@import model.des._
+@import model.RepaymentDataNoRiskingStatus
+@import model.Vrn
+
+
+@this(
+  mainTemplate: views.html.main_template,
+  viewConfig: ViewConfig,
+  repaymentDetails: views.html.partials.repayment_details,
+  multiple_repayments: views.html.partials.multiple_repayment_details,
+  bread_crumbs: views.html.partials.bread_crumbs
+)
+
+@(
+  hasSuspendedRepayments: Boolean,
+  inProgress: List[RepaymentDataNoRiskingStatus],
+  showBankDetails: Boolean,
+  bankDetails: Option[BankDetails],
+  address: Option[String],
+  addressExists: Boolean,
+  inflightBankDetails : Boolean)(implicit request: Request[_], messages: Messages)
+
+
+@mainTemplate(title = Messages("inprogress.title")) {
+
+    @bread_crumbs(Messages("inprogress.track_repayments"))
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h1 id="main-message" class="govuk-heading-xl">@Messages("inprogress.title")</h1>
+        </div>
+    </div>
+    <div class="govuk-grid-row" data-gtag="repayment-type:one_in_progress_multiple_delayed">
+        <div class="govuk-grid-column-three-quarters govuk-!-padding-bottom-3">
+            <div class="govuk-tabs govuk-!-padding-bottom-6" data-module="govuk-tabs">
+                <ul class="govuk-tabs__list" role="tablist">
+                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                        <a class="govuk-tabs__tab" href="#inProgress"  id="tab_inProgress" >@Messages("in_progress")</a>
+                    </li>
+                    <li class="govuk-tabs__list-item">
+                        <a class="govuk-tabs__tab" href="#completed" id="tab_completed">@Messages("completed")</a>
+                    </li>
+                </ul>
+                <section class="govuk-tabs__panel" id="inProgress">
+                    @if(hasSuspendedRepayments) {
+                        <div class="notice subsection near-deadline-view-warning ">
+                            <i class="icon icon-important"><span class="govuk-visually-hidden">ASD</span></i>
+                            <div id="suspended-repayment-warning">
+                                <strong class="bold-small">@Messages("inprogress.repayment_suspended")</strong>
+                                <strong class="bold-small">@Html(Messages("inprogress.submit_latest_return"))</strong>
+                            </div>
+                        </div>
+                    } else {
+                        <h2 class="govuk-heading-l" >@Messages("in_progress")</h2>
+                    }
+
+                    @multiple_repayments(inProgress, "_inprogress")
+                    <div id="inprogress-exist"></div>
+                </section>
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="completed">
+                    <h2 class="govuk-heading-l"  >@Messages("completed")</h2>
+                    <div class="govuk-inset-text" id="no-repayments">@Messages("inprogress.no_completed_repayments")</div>
+                    <p class="govuk-body" >@Html(Messages("inprogress.no_completed_desc", viewConfig.paymentHistoryUrl))</p>
+                    <div id="completed-none"></div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            @repaymentDetails(showBankDetails, bankDetails, address, addressExists, inflightBankDetails)
+        </div>
+    </div>
+}

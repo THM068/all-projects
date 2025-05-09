@@ -1,0 +1,9 @@
+{
+  "resources" : {
+    "includes" : [ {
+      "pattern" : "\\QMETA-INF/micronaut/io.micronaut.inject.BeanDefinitionReference/com.blog.learning.beans.$PersonService$Definition$Reference\\E"
+    } ],
+    "excludes" : [ ]
+  },
+  "bundles" : [ ]
+}

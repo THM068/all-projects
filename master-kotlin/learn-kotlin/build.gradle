@@ -1,0 +1,69 @@
+buildscript {
+    ext.kotlin_version = '1.5.20'
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.4.10'
+}
+group = 'me.tma24'
+version = '1.0-SNAPSHOT'
+
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin'
+def arrow_version = "0.13.1"
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    implementation group: 'com.amazonaws', name: 'aws-java-sdk-bom', version: '1.11.979', ext: 'pom'
+    implementation group: 'com.amazonaws', name: 'aws-java-sdk-s3', version: '1.11.979'
+    implementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+    implementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+    testImplementation 'org.jetbrains.kotlin:kotlin-test-junit5'
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.7.1'
+
+    def coroutines_version = '1.2.1'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+    implementation "io.arrow-kt:arrow-optics:$arrow_version"
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.19.0'
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter', version: '5.7.1'
+    testImplementation group: 'com.nhaarman', name: 'mockito-kotlin', version: '0.9.0'
+
+    // https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-jdk8
+    implementation group: 'org.jetbrains.kotlinx', name: 'kotlinx-coroutines-jdk8', version: '1.4.3'
+    implementation group: 'no.tornado', name: 'tornadofx', version: '1.7.19'
+
+    // https://mvnrepository.com/artifact/org.json/json
+    implementation group: 'org.json', name: 'json', version: '20210307'
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
+    implementation group: 'com.jayway.jsonpath', name: 'json-path', version: '2.6.0'
+
+    // https://mvnrepository.com/artifact/com.opencsv/opencsv
+    implementation group: 'com.opencsv', name: 'opencsv', version: '5.5.2'
+
+
+
+
+
+
+    kapt    "io.arrow-kt:arrow-meta:$arrow_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+}
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+
+test {
+    useJUnitPlatform()
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}

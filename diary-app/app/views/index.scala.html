@@ -1,0 +1,11 @@
+@()(implicit flash: Flash)
+
+@main("Welcome to Play") {
+  <h1>Welcome to Play!</h1>
+  <p>
+    @if( !flash.isEmpty) {
+      @flash.get("name") -- @flash.get("username")
+    }
+
+  </p>
+}

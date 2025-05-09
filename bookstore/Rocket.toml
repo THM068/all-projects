@@ -1,0 +1,3 @@
+[default]
+port = 9998
+template_dir = "templates"
