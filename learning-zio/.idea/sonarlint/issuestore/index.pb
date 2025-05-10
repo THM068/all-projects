@@ -39,3 +39,5 @@ O
 src/main/scala/ZioHttpApp.scala,0/1/01bb06401316c8ee8c5b7e44dcf64b6e53b183ff
 V
 &src/main/scala/ZioAppsInParallel.scala,5/1/5106e45b7e189b92c8d9cdaa107f87a95110b7ad
+R
+"src/main/scala/SequentialApp.scala,4/9/4984daaa361be43d233e2196d851a73e1bff9d2f

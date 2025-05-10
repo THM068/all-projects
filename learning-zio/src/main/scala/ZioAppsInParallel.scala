@@ -1,15 +1,18 @@
-import zio.{Console, Unsafe, ZIO, ZIOApp, ZIOAppDefault}
+import zio.{Console, Unsafe, ZIO, ZIOApp, ZIOAppArgs, ZIOAppDefault, ZLayer}
 
 object ZioAppsInParallel extends ZIOApp.Proxy(MyApp1 <> MyApp2) {
 
 }
 
 object MyApp1 extends ZIOAppDefault {
-  val run = Console.printLine("Hello from MyApp1")
+  override val bootstrap = zio.Runtime.enableLoomBasedExecutor
+  val run = ZIO.attempt {
+    println(s"Task running on a virtual-thread: ${Thread.currentThread()}")
+  }
 }
 
 object MyApp2 extends ZIOAppDefault {
-  val run = Console.printLine("Hello from MyApp2")
+  val run = Console.printLine("Hello from MyApp2")*> ZIO.fail("failed")
 }
 
 object ZIO_App_Proxy extends App {

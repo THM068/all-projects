@@ -5,93 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ab543eb-4fa2-4ea7-81e1-0b7f87cf262c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_lihaoyi_unroll_annotation_2_12_0_1_12_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_izumi_reflect_2_12_3_0_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_izumi_reflect_thirdparty_boopickle_shaded_2_12_3_0_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_2_12_2_1_17_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_internal_macros_2_12_2_1_17_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_json_2_12_0_7_42_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_prelude_2_12_1_0_0_RC39_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_prelude_macros_2_12_1_0_0_RC39_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_schema_json_2_12_1_6_6_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_schema_macros_2_12_1_6_6_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_schema_protobuf_2_12_1_6_6_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_stacktracer_2_12_2_1_17_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_streams_2_12_2_1_17_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_buffer_4_1_119_Final_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_codec_4_1_119_Final_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_codec_http_4_1_119_Final_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_codec_socks_4_1_119_Final_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_common_4_1_119_Final_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_handler_4_1_119_Final_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_handler_proxy_4_1_119_Final_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_resolver_4_1_119_Final_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_4_1_119_Final_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/c/0c4f50902d35d3be5b05c65241b8d7759ec6e536" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/c/0c4f50902d35d3be5b05c65241b8d7759ec6e536" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_izumi_reflect_2_12_2_3_9_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_izumi_reflect_thirdparty_boopickle_shaded_2_12_2_3_9_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_2_12_2_1_9_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_http_2_12_3_0_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_http_2_12_3_2_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_internal_macros_2_12_2_1_9_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_json_2_12_0_7_2_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_prelude_2_12_1_0_0_RC28_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_prelude_macros_2_12_1_0_0_RC28_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_schema_2_12_1_4_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_schema_2_12_1_6_6_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_schema_derivation_2_12_1_4_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_schema_derivation_2_12_1_6_6_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_schema_json_2_12_1_4_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_schema_macros_2_12_1_4_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_schema_protobuf_2_12_1_4_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_stacktracer_2_12_2_1_9_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__dev_zio_zio_streams_2_12_2_1_9_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_incubator_netty_incubator_transport_classes_io_uring_0_0_25_Final_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_incubator_netty_incubator_transport_native_io_uring_0_0_25_Final_linux_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_buffer_4_1_112_Final_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_codec_4_1_112_Final_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_codec_http_4_1_112_Final_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_codec_socks_4_1_112_Final_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_common_4_1_112_Final_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_handler_4_1_112_Final_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_handler_proxy_4_1_112_Final_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_resolver_4_1_112_Final_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_4_1_112_Final_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_classes_epoll_4_1_112_Final_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_classes_epoll_4_1_119_Final_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_classes_kqueue_4_1_112_Final_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_classes_kqueue_4_1_119_Final_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_native_epoll_4_1_112_Final_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_native_epoll_4_1_119_Final_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_native_epoll_4_1_112_Final_linux_aarch_64_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_native_epoll_4_1_119_Final_linux_aarch_64_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_native_epoll_4_1_112_Final_linux_x86_64_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_native_epoll_4_1_119_Final_linux_x86_64_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_native_kqueue_4_1_112_Final_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_native_kqueue_4_1_119_Final_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_native_kqueue_4_1_112_Final_osx_aarch_64_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_native_kqueue_4_1_119_Final_osx_aarch_64_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_native_kqueue_4_1_112_Final_osx_x86_64_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_native_kqueue_4_1_119_Final_osx_x86_64_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_native_unix_common_4_1_112_Final_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_native_unix_common_4_1_119_Final_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_collection_compat_2_12_2_12_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_collection_compat_2_12_2_13_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/vrm-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/vrm-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/vrm-app.vrm-app-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/vrm-app.vrm-app-build.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4bd4147fc61cd0a52e9c1b027a64c7ee3de8b27f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/1/610a2888bf65041f5a3b0d093b1efa87934b4a3e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/66bf70910c4dc205219c4ff9b7f48f8f514ba597" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/3/836786a1215ddf27c86501df9d448d57cddd80a4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/880776e9f7b65d5d7507fb205fd9881f06cf45f8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/be5267d3c69fd945ce6df68344c8aa1fb6b14f9e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/7/c7527d2ae2d48af6fbc8889b5aa1a0747c089d40" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dc0a6e783e97241749a51c5e798aecb16f8fd9ae" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/b/4bd4147fc61cd0a52e9c1b027a64c7ee3de8b27f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/1/610a2888bf65041f5a3b0d093b1efa87934b4a3e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/6/66bf70910c4dc205219c4ff9b7f48f8f514ba597" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/3/836786a1215ddf27c86501df9d448d57cddd80a4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/8/880776e9f7b65d5d7507fb205fd9881f06cf45f8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/e/be5267d3c69fd945ce6df68344c8aa1fb6b14f9e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/7/c7527d2ae2d48af6fbc8889b5aa1a0747c089d40" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/c/dc0a6e783e97241749a51c5e798aecb16f8fd9ae" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-zio/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-zio/src/main/scala/SequentialApp.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learn-scala-effects/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../learn-scala-effects/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-zio/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-zio/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-zio/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-zio/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-zio/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-zio/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-zio/src/main/scala/ZioAppsInParallel.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-zio/src/main/scala/ZioAppsInParallel.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/web/assets/js/htmx.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/web/assets/js/htmx.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/crm/middleware/HtmxMiddleware.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/crm/middleware/HtmxMiddleware.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/crm/server/AppServer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/crm/server/AppServer.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/com/crm/middleware/HtmxMiddlewareSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/com/crm/middleware/HtmxMiddlewareSpec.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +62,7 @@
     </system>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="true" />
@@ -406,7 +328,7 @@
       <workItem from="1738596457233" duration="3016000" />
       <workItem from="1738898582791" duration="2633000" />
       <workItem from="1742563346516" duration="995000" />
-      <workItem from="1746181828612" duration="7293000" />
+      <workItem from="1746181828612" duration="9035000" />
     </task>
     <servers />
   </component>
