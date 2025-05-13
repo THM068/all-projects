@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ab543eb-4fa2-4ea7-81e1-0b7f87cf262c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../learning-zio/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../learning-zio/src/main/scala/SequentialApp.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../learn-scala-effects/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../learn-scala-effects/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-zio/src/main/scala/ZIOfuture.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-zio/src/main/scala/chapter1/Question1.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-zio/src/main/scala/chapter1/Question2.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-zio/src/main/scala/chapter1/Question3.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-zio/src/main/scala/core/Main.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-zio/src/test/scala/learn/test/ConsoleSpec.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning-zio/src/test/scala/learn/test/ErrorTypes.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../learning-zio/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-zio/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../learning-zio/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-zio/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../learning-zio/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-zio/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../learning-zio/src/main/scala/ZioAppsInParallel.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-zio/src/main/scala/ZioAppsInParallel.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning-zio/src/main/scala/SequentialApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-zio/src/main/scala/SequentialApp.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../petshop/app/repositories/CustomerRepository.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../petshop/app/repositories/CustomerRepository.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -328,7 +331,7 @@
       <workItem from="1738596457233" duration="3016000" />
       <workItem from="1738898582791" duration="2633000" />
       <workItem from="1742563346516" duration="995000" />
-      <workItem from="1746181828612" duration="9035000" />
+      <workItem from="1746181828612" duration="11730000" />
     </task>
     <servers />
   </component>

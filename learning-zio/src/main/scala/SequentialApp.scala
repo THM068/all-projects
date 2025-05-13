@@ -1,5 +1,5 @@
 import zio.Console.ConsoleLive.printLine
-import zio.{ZIO, ZIOAppDefault}
+import zio.{Console, ZIO, ZIOAppDefault}
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.io.StdIn
@@ -8,13 +8,13 @@ import scala.concurrent.{ExecutionContext, Future}
 object SequentialApp extends ZIOAppDefault {
   val prints =
      List(
-       printLine("The"),
+       printLine("hello"),
        printLine("quick"),
        printLine("brown"),
-       printLine("fox")
+       ZIO.fail("fox")
    )
 
-   val printWords = ZIO.collectAll(prints)
+   val printWords = ZIO.collectAllPar(prints)
 
   val firstName = ZIO.attempt(StdIn.readLine("What is your first name? "))
   val lastName = ZIO.attempt(StdIn.readLine("What is your last name? "))
@@ -25,7 +25,13 @@ object SequentialApp extends ZIOAppDefault {
   val goShoppingFuture: Future[Unit] =  Future {
     println("Go shopping")
   }
-  val run =  printWords
+  val run = for {
+    _ <- ZIO.debug("Hello world")
+    re <- printWords.exit
+    _ <- ZIO.debug(s"Result: $re")
+    _ <- fullName.flatMap(name => printLine(s"Hello $name"))
+    _ <- ZIO.fromFuture(_ => goShoppingFuture)
+  } yield ()
 
 
 
