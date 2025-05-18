@@ -7,14 +7,31 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab5c021a-3d5c-4c41-adce-7e0431627bcf" name="Changes" comment="" />
+    <list default="true" id="ab5c021a-3d5c-4c41-adce-7e0431627bcf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../datafx/Export.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../datafx/src/commands/command_list.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../datafx/src/commands/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../datafx/src/session/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../datafx/src/session/session.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../datafx/test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blnk-client/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blnk-client/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../halifax-docs/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../halifax-docs/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../horticulture-helper/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../horticulture-helper/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn-rust/ccwc/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../learn-rust/ccwc/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn-rust/rust-goodness/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../learn-rust/rust-goodness/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn-rust/rust-goodness/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../learn-rust/rust-goodness/target/.rustc_info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../petshop/app/repositories/CustomerRepository.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../petshop/app/repositories/CustomerRepository.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../petshop/test/cats/FunctorSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../petshop/test/cats/FunctorSpec.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vrm-app/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../vrm-app/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="bp3tteye" />
@@ -120,6 +137,7 @@
       <workItem from="1739940279654" duration="588000" />
       <workItem from="1743101620457" duration="598000" />
       <workItem from="1744810340150" duration="599000" />
+      <workItem from="1747260293482" duration="597000" />
     </task>
     <servers />
   </component>

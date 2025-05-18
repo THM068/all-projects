@@ -10,7 +10,6 @@ import reactivemongo.api.{Cursor, ReadPreference}
 
 import javax.inject.Inject
 import scala.concurrent.{ExecutionContext, Future}
-import play.api.libs.concurrent.
 
 @Singleton
 class CustomerRepository @Inject()(reactiveMongoApi: ReactiveMongoApi)(implicit ec: ExecutionContext){

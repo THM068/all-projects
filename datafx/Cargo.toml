@@ -1,0 +1,10 @@
+[package]
+name = "datafx"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version ="4.5.38", features = ["cargo", "color"] }
+polars = { version = "0.46.0" , features = ["full"] } # Or specify to exclude 0.47+
+polars-compute = "0.46.0"
+#polars = { version = "0.46.0" }

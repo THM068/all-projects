@@ -5,17 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ab543eb-4fa2-4ea7-81e1-0b7f87cf262c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../learning-zio/src/main/scala/ZIOfuture.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../learning-zio/src/main/scala/chapter1/Question1.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../learning-zio/src/main/scala/chapter1/Question2.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../learning-zio/src/main/scala/chapter1/Question3.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../learning-zio/src/main/scala/core/Main.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../learning-zio/src/test/scala/learn/test/ConsoleSpec.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../learning-zio/src/test/scala/learn/test/ErrorTypes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../learning-zio/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-zio/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../learning-zio/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-zio/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../learning-zio/src/main/scala/SequentialApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../learning-zio/src/main/scala/SequentialApp.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../petshop/app/repositories/CustomerRepository.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../petshop/app/repositories/CustomerRepository.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

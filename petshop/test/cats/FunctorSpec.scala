@@ -18,3 +18,7 @@ class FunctorSpec extends AnyFunSuite with Matchers {
     Functor[List].map(List(1,2,3))(_ + 1) shouldBe List(2,3,4)
   }
 }
+
+trait  Functor[F[_]] {
+  def map[A,B](container: F[A])(f: A => B): F[B]
+}
